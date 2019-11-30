@@ -15,6 +15,10 @@
 		591F94D4238F847B0009AA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591F94D3238F847B0009AA47 /* Assets.xcassets */; };
 		591F94D7238F847B0009AA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591F94D5238F847B0009AA47 /* LaunchScreen.storyboard */; };
 		591F94DA238F847B0009AA47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591F94D9238F847B0009AA47 /* main.m */; };
+		591F94E3238F87450009AA47 /* MyBubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 591F94E1238F87450009AA47 /* MyBubbleTableViewCell.m */; };
+		591F94E4238F87450009AA47 /* MyBubbleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591F94E2238F87450009AA47 /* MyBubbleTableViewCell.xib */; };
+		591F94E8238F87680009AA47 /* YourBubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 591F94E6238F87670009AA47 /* YourBubbleTableViewCell.m */; };
+		591F94E9238F87680009AA47 /* YourBubbleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591F94E7238F87670009AA47 /* YourBubbleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,12 @@
 		591F94D6238F847B0009AA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		591F94D8238F847B0009AA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		591F94D9238F847B0009AA47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		591F94E0238F87450009AA47 /* MyBubbleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBubbleTableViewCell.h; sourceTree = "<group>"; };
+		591F94E1238F87450009AA47 /* MyBubbleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBubbleTableViewCell.m; sourceTree = "<group>"; };
+		591F94E2238F87450009AA47 /* MyBubbleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBubbleTableViewCell.xib; sourceTree = "<group>"; };
+		591F94E5238F87670009AA47 /* YourBubbleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YourBubbleTableViewCell.h; sourceTree = "<group>"; };
+		591F94E6238F87670009AA47 /* YourBubbleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourBubbleTableViewCell.m; sourceTree = "<group>"; };
+		591F94E7238F87670009AA47 /* YourBubbleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourBubbleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,12 @@
 				591F94C5238F84790009AA47 /* AppDelegate.m */,
 				591F94C7238F84790009AA47 /* SceneDelegate.h */,
 				591F94C8238F84790009AA47 /* SceneDelegate.m */,
+				591F94E0238F87450009AA47 /* MyBubbleTableViewCell.h */,
+				591F94E1238F87450009AA47 /* MyBubbleTableViewCell.m */,
+				591F94E2238F87450009AA47 /* MyBubbleTableViewCell.xib */,
+				591F94E5238F87670009AA47 /* YourBubbleTableViewCell.h */,
+				591F94E6238F87670009AA47 /* YourBubbleTableViewCell.m */,
+				591F94E7238F87670009AA47 /* YourBubbleTableViewCell.xib */,
 				591F94CA238F84790009AA47 /* ViewController.h */,
 				591F94CB238F84790009AA47 /* ViewController.m */,
 				591F94CD238F84790009AA47 /* Main.storyboard */,
@@ -138,7 +154,9 @@
 			files = (
 				591F94D7238F847B0009AA47 /* LaunchScreen.storyboard in Resources */,
 				591F94D4238F847B0009AA47 /* Assets.xcassets in Resources */,
+				591F94E9238F87680009AA47 /* YourBubbleTableViewCell.xib in Resources */,
 				591F94CF238F84790009AA47 /* Main.storyboard in Resources */,
+				591F94E4238F87450009AA47 /* MyBubbleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				591F94DA238F847B0009AA47 /* main.m in Sources */,
+				591F94E3238F87450009AA47 /* MyBubbleTableViewCell.m in Sources */,
 				591F94CC238F84790009AA47 /* ViewController.m in Sources */,
+				591F94E8238F87680009AA47 /* YourBubbleTableViewCell.m in Sources */,
 				591F94D2238F84790009AA47 /* Talk.xcdatamodeld in Sources */,
 				591F94C6238F84790009AA47 /* AppDelegate.m in Sources */,
 				591F94C9238F84790009AA47 /* SceneDelegate.m in Sources */,
@@ -229,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -281,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,14 +314,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32F84GR45J;
 				INFOPLIST_FILE = Talk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soohyuk.Talk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,14 +332,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32F84GR45J;
 				INFOPLIST_FILE = Talk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soohyuk.Talk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

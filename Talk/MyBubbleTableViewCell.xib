@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myBubbleCell" rowHeight="96" id="KGk-i7-Jjw" customClass="MyBubbleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOP-TG-CFA">
+                        <rect key="frame" x="277" y="10" width="98" height="76"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메세지 내용" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-Ba-X1D">
+                                <rect key="frame" x="10" y="10" width="78" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lar-Ba-X1D" firstAttribute="leading" secondItem="aOP-TG-CFA" secondAttribute="leading" constant="10" id="GoN-qQ-ynf"/>
+                            <constraint firstItem="Lar-Ba-X1D" firstAttribute="top" secondItem="aOP-TG-CFA" secondAttribute="top" constant="10" id="ah7-Et-GRe"/>
+                            <constraint firstAttribute="trailing" secondItem="Lar-Ba-X1D" secondAttribute="trailing" constant="10" id="i0u-cT-yVr"/>
+                            <constraint firstAttribute="bottom" secondItem="Lar-Ba-X1D" secondAttribute="bottom" constant="10" id="lFm-4p-TmF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오후 3시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRl-5V-TZc">
+                        <rect key="frame" x="233.5" y="73" width="35.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aOP-TG-CFA" secondAttribute="bottom" constant="10" id="0X2-nF-tku"/>
+                    <constraint firstAttribute="trailing" secondItem="aOP-TG-CFA" secondAttribute="trailing" constant="10" id="SWn-Zz-kGS"/>
+                    <constraint firstItem="aOP-TG-CFA" firstAttribute="bottom" secondItem="GRl-5V-TZc" secondAttribute="bottom" constant="1" id="WT6-B2-bU7"/>
+                    <constraint firstItem="aOP-TG-CFA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YU3-VE-fCe"/>
+                    <constraint firstItem="GRl-5V-TZc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="dWS-6Q-hpV"/>
+                    <constraint firstItem="aOP-TG-CFA" firstAttribute="leading" secondItem="GRl-5V-TZc" secondAttribute="trailing" constant="8" id="lVU-JJ-7Ji"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="textBody" destination="Lar-Ba-X1D" id="7Ft-ut-Bai"/>
+                <outlet property="textView" destination="aOP-TG-CFA" id="IMR-Cz-dGs"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="170.75892857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
